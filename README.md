@@ -22,7 +22,7 @@ Solo necesitas incluir la hoja de estilos en el `<head>` y el script de la lógi
 ## Uso y Ejemplos de Código
 El componente es 100% dinámico y no requiere agregar contenedores en el HTML manualmente.
 
-** 1. Notificación de Éxito
+1. Notificación de Éxito
 Al confirmar una acción, se invoca con el parámetro 'success'.
 
 ```html
@@ -43,3 +43,15 @@ Ideal para avisos neutrales.
 // Mostrará una tarjeta azul
 mostrarToast('Tienes nuevos mensajes en tu bandeja.', 'info');
 ```
+
+## Capturas de Pantalla
+1. Notificación de Éxito
+<img width="1627" height="931" alt="Parte_6" src="https://github.com/user-attachments/assets/977967ab-df00-4ba3-81e5-601c32f1d201" />
+2. Notificación de Error
+<img width="1920" height="1090" alt="Parte_7" src="https://github.com/user-attachments/assets/571de31a-2a41-406d-a316-01c63ef80959" />
+3. Notificación de Información
+<img width="1920" height="1200" alt="Parte_8" src="https://github.com/user-attachments/assets/621715d1-2b0b-444c-8d31-074efc13867e" />
+
+## Video Demostrativo
+En el siguiente video de 60 segundos explico el problema de diseño que resuelve el componente:
+()
