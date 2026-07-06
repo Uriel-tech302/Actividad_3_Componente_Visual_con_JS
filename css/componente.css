@@ -1,0 +1,65 @@
+/* ==========================================
+   Estilos base para probar la página
+   ========================================== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    padding: 40px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-exito { background-color: #28a745; }
+.btn-error { background-color: #dc3545; }
+.btn-info { background-color: #17a2b8; }
+
+/* ==========================================
+   CSS DEL COMPONENTE VISUAL (TOAST)
+   ========================================== */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast-notificacion {
+    min-width: 250px;
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(100%); /* Empieza fuera de la pantalla */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* Para que el usuario sepa que puede cerrarlo al dar clic */
+}
+
+/* Animación de entrada */
+.toast-notificacion.mostrar {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Variantes de color según el tipo (Dinámico) */
+.toast-success { background-color: #28a745; }
+.toast-error { background-color: #dc3545; }
+.toast-info { background-color: #17a2b8; }
+.toast-warning { background-color: #ffc107; color: #333; }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Componente Toast</title>
+    <link rel="stylesheet" href="css/componente.css">
+</head>
+<body>
+
+    <h1>Componente Visual Reutilizable</h1>
+    <!-- Ejemplos prácticos para un sistema de inventario/ventas -->
+    <div>
+        <button class="btn-exito" onclick="mostrarToast('¡Alberca familiar agregada al carrito con éxito!', 'success', 4000)">
+            Simular Venta (Éxito)
+        </button>
+
+        <button class="btn-error" onclick="mostrarToast('Error: No hay suficiente stock de salvavidas.', 'error')">
+            Fallo de Inventario (Error)
+        </button>
+
+        <button class="btn-info" onclick="mostrarToast('Tienes 2 mensajes nuevos en la bandeja.', 'info')">
+            Notificación General (Info)
+        </button>
+    </div>
+
+    <!-- Conectamos el script del componente -->
+    <script src="js/componente.js"></script>
+
+</body>
+</html>
