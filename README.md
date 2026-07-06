@@ -19,3 +19,24 @@ Solo necesitas incluir la hoja de estilos en el `<head>` y el script de la lógi
 <!-- Antes de cerrar </body> -->
 <script src="js/componente.js"></script>
 ```
+## Uso y Ejemplos de Código
+El componente es 100% dinámico y no requiere agregar contenedores en el HTML manualmente.
+
+1. Notificación de Éxito
+Al confirmar una acción, se invoca con el parámetro 'success'.
+```html
+// Mostrará una tarjeta verde durante 4 segundos (4000ms)
+mostrarToast('¡Artículo agregado al carrito con éxito!', 'success', 4000);
+```
+2. Notificación de Error
+Al ocurrir una falla en el sistema, se utiliza el parámetro 'error'. Al omitir el tiempo, utiliza el valor por defecto de 3000ms.
+```html
+// Mostrará una tarjeta roja
+mostrarToast('Error de sistema: No hay stock disponible.', 'error');
+```
+3. Notificación de Información
+Ideal para avisos neutrales.
+```html
+// Mostrará una tarjeta azul
+mostrarToast('Tienes nuevos mensajes en tu bandeja.', 'info');
+```
